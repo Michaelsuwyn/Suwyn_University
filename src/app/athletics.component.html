@@ -1,0 +1,83 @@
+<div class="col  col-md-4" [ngStyle]="{'padding': '100px'}">
+        <img src={{this.wrestling.pic}} [ngStyle]="this.sportStyles()" (mouseover) = "this.sportHover()" (mouseout)="sportUnhover()">
+        <h2>Wrestling</h2>
+    </div>
+
+
+    <div class="col  col-md-4" [ngStyle]="{'padding': '100px'}">
+            <img src={{this.soccer.pic}} [ngStyle]="this.sportStyles()" (mouseover) = "sportHover()" (mouseout)="sportUnhover()">
+            <h2>Soccer</h2>
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div container="fluid" [ngStyle] = "{'background-color': 'cornflowerblue'}">
+    <div class="row">
+        <nav-bar></nav-bar>
+    </div>
+
+    <div>
+        <span>
+            <h1 [ngStyle] = "{'padding': '50px'}"> <b>Athletics Schedule </b> </h1>
+        </span>
+
+        <div class ="row">
+            <div class="col col-md-4" [ngStyle]="{'padding': '100px'}" (mouseover) = "this.sportHover()" (mouseout) = "this.sportUnhover()">
+                <img src="assets/soccerimage.jpg" [ngStyle]="this.sportStyles()" />
+                <h2>Soccer</h2>
+            </div>
+        
+            <div class="col  col-md-4" [ngStyle]="{'padding': '100px'}">
+                <img src="assets/footballimage.jpg" [ngStyle]="this.sportStyles()">
+                <h2>Football</h2>
+            </div>
+
+            <div class="col  col-md-4" [ngStyle]="{'padding': '100px'}">
+                <img src="assets/baseballimage.JPG" [ngStyle]="this.sportStyles()">
+                <h2>Baseball</h2>
+            </div>
+        </div>
+
+
+
+        <div class ="row">
+                <div class="col col-md-4" [ngStyle]="{'padding': '100px'}">
+                    <img src="assets/volleyballimage.jpg" [ngStyle]="this.sportStyles()">
+                    <h2>Volleyball</h2>
+                </div>
+            
+                <div class="col  col-md-4" [ngStyle]="{'padding': '100px'}">
+                    <img src="assets/hockeyimage.jpg" [ngStyle]="this.sportStyles()">
+                    <h2>Hockey</h2>
+                </div>
+    
+                <div class="col  col-md-4" [ngStyle]="{'padding': '100px'}">
+                    <img src="assets/wrestlingimage.jpg" [ngStyle]="this.sportStyles()">
+                    <h2>Wrestling</h2>
+                </div>
+            </div>
+
+    </div>
+</div> -->

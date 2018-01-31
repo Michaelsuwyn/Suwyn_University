@@ -4,9 +4,11 @@ import { DegreesComponent} from './degrees.component';
 import { NavbarComponent } from './navbar.component';
 import { MainComponent } from './main.component';
 
+
+
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  templateUrl: './homepage.component.html',
   styleUrls: ['./app.component.css'],
   providers: [
     DegreesComponent,
@@ -16,12 +18,14 @@ import { MainComponent } from './main.component';
  
 
 })
-export class AppComponent {
+export class HomePageComponent {
   title = 'Angular app';
   courses;
+  logo;
 
   constructor(CoursesComponent: DegreesComponent){
     this.courses = CoursesComponent.courses;
+    this.logo = "suwynuniversity.PNG";
   }
 }
 
