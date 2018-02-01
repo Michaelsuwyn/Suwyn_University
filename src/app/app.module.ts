@@ -15,7 +15,6 @@ import { MainComponent } from './main.component';
 import { DegreesDetailsComponent } from './degreesdetails.component';
 import { HomePageComponent } from './homepage.component';
 import { AthleticsComponent } from './athletics.component';
-import { SingleSportComponent } from './singlesport.component';
 
 const appRoutes: Routes = [
   //{path: 'degrees-details', component: DegreesDetailsComponent},
@@ -34,7 +33,6 @@ const appRoutes: Routes = [
     MainComponent,
     HomePageComponent,
     AthleticsComponent,
-    SingleSportComponent
   ],
   imports: [
     RouterModule.forRoot(

@@ -4,7 +4,7 @@
     <div class="row">
         <nav-bar></nav-bar>
     </div>
-
+    
     <div>
         <span>
             <h1 [ngStyle] = "{'padding': '50px'}"> <b>Athletics Schedule </b> </h1>
@@ -16,13 +16,13 @@
                 <h2>Soccer</h2>
             </div>
         
-            <div class="col  col-md-4" [ngStyle]="{'padding': '100px'}">
-                <img src="assets/footballimage.jpg" [ngStyle]="this.sportStyles()">
+            <div class="col  col-md-4" [ngStyle]="{'padding': '100px'}" (mouseover) = "this.sportHover2()" (mouseout) = "this.sportUnhover2()">
+                <img src="assets/footballimage.jpg" [ngStyle]="this.sportStyles2()">
                 <h2>Football</h2>
             </div>
 
-            <div class="col  col-md-4" [ngStyle]="{'padding': '100px'}">
-                <img src="assets/baseballimage.JPG" [ngStyle]="this.sportStyles()">
+            <div class="col  col-md-4" [ngStyle]="{'padding': '100px'}" (mouseover) = "this.sportHover3()" (mouseout) = "this.sportUnhover3()">
+                <img src="assets/baseballimage.JPG" [ngStyle]="this.sportStyles3()">
                 <h2>Baseball</h2>
             </div>
         </div>
@@ -30,18 +30,18 @@
 
 
         <div class ="row">
-                <div class="col col-md-4" [ngStyle]="{'padding': '100px'}">
-                    <img src="assets/volleyballimage.jpg" [ngStyle]="this.sportStyles()">
+                <div class="col col-md-4" [ngStyle]="{'padding': '100px'}" (mouseover) = "this.sportHover4()" (mouseout) = "this.sportUnhover4()">
+                    <img src="assets/volleyballimage.jpg" [ngStyle]="this.sportStyles4()">
                     <h2>Volleyball</h2>
                 </div>
             
-                <div class="col  col-md-4" [ngStyle]="{'padding': '100px'}">
-                    <img src="assets/hockeyimage.jpg" [ngStyle]="this.sportStyles()">
+                <div class="col  col-md-4" [ngStyle]="{'padding': '100px'}" (mouseover) = "this.sportHover5()" (mouseout) = "this.sportUnhover5()">
+                    <img src="assets/hockeyimage.jpg" [ngStyle]="this.sportStyles5()">
                     <h2>Hockey</h2>
                 </div>
     
-                <div class="col  col-md-4" [ngStyle]="{'padding': '100px'}">
-                    <img src="assets/wrestlingimage.jpg" [ngStyle]="this.sportStyles()">
+                <div class="col  col-md-4" [ngStyle]="{'padding': '100px'}" (mouseover) = "this.sportHover6()" (mouseout) = "this.sportUnhover6()">
+                    <img src="assets/wrestlingimage.jpg" [ngStyle]="this.sportStyles6()">
                     <h2>Wrestling</h2>
                 </div>
             </div>
@@ -52,16 +52,3 @@
 
 
 
-
-<!-- <div class="col  col-md-4" [ngStyle]="{'padding': '100px'}">
-        <img src={{this.wrestling.pic}} [ngStyle]="this.sportStyles()" (mouseover) = "this.sportHover()" (mouseout)="sportUnhover()">
-        <h2>Wrestling</h2>
-    </div>
-
-
-    <div class="col  col-md-4" [ngStyle]="{'padding': '100px'}">
-            <img src={{this.soccer.pic}} [ngStyle]="this.sportStyles()" (mouseover) = "sportHover()" (mouseout)="sportUnhover()">
-            <h2>Soccer</h2>
-        </div>
-    
- -->
