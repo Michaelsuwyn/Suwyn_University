@@ -3,6 +3,7 @@
 <div container="fluid" [ngStyle] = "{'background-color': 'cornflowerblue'}">
     <div class="row">
         <nav-bar></nav-bar>
+        <carousel></carousel>
     </div>
     
     <div>
@@ -12,36 +13,49 @@
 
         <div class ="row">
             <div class="col col-md-4" [ngStyle]="{'padding': '100px'}" (mouseover) = "this.sportHover()" (mouseout) = "this.sportUnhover()">
+                <a [routerLink]="['/sport-schedule', 0]">
                 <img src="assets/soccerimage.jpg" [ngStyle]="this.sportStyles()" />
+                </a>
                 <h2>Soccer</h2>
             </div>
         
             <div class="col  col-md-4" [ngStyle]="{'padding': '100px'}" (mouseover) = "this.sportHover2()" (mouseout) = "this.sportUnhover2()">
+                <a [routerLink]="['/sport-schedule', 1]">
                 <img src="assets/footballimage.jpg" [ngStyle]="this.sportStyles2()">
+                </a>
                 <h2>Football</h2>
             </div>
 
             <div class="col  col-md-4" [ngStyle]="{'padding': '100px'}" (mouseover) = "this.sportHover3()" (mouseout) = "this.sportUnhover3()">
+                <a [routerLink]="['/sport-schedule', 2]">
                 <img src="assets/baseballimage.JPG" [ngStyle]="this.sportStyles3()">
+                </a>
                 <h2>Baseball</h2>
             </div>
         </div>
 
-
+       
+       
 
         <div class ="row">
                 <div class="col col-md-4" [ngStyle]="{'padding': '100px'}" (mouseover) = "this.sportHover4()" (mouseout) = "this.sportUnhover4()">
+                    <a [routerLink]="['/sport-schedule', 3]">
                     <img src="assets/volleyballimage.jpg" [ngStyle]="this.sportStyles4()">
+                    </a>
                     <h2>Volleyball</h2>
                 </div>
             
                 <div class="col  col-md-4" [ngStyle]="{'padding': '100px'}" (mouseover) = "this.sportHover5()" (mouseout) = "this.sportUnhover5()">
+                    <a [routerLink]="['/sport-schedule', 4]">
                     <img src="assets/hockeyimage.jpg" [ngStyle]="this.sportStyles5()">
+                    </a>
                     <h2>Hockey</h2>
                 </div>
     
                 <div class="col  col-md-4" [ngStyle]="{'padding': '100px'}" (mouseover) = "this.sportHover6()" (mouseout) = "this.sportUnhover6()">
+                    <a [routerLink]="['/sport-schedule', 5]">
                     <img src="assets/wrestlingimage.jpg" [ngStyle]="this.sportStyles6()">
+                    </a>
                     <h2>Wrestling</h2>
                 </div>
             </div>

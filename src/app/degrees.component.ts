@@ -13,7 +13,7 @@ import {DegreesService} from './degrees.service';
                     <span>{{course.name}}</span>
                     <div [ngStyle]="{'height': '70px'}">
                         <a [routerLink]="['/degrees-details', course.id]">
-                            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" (click)="giveDetails()">Check it out</button>
+                            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" >Check it out</button>
                         </a>
                     </div>
                 </li>

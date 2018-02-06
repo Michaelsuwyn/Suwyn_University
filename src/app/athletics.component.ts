@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 
+
 @Component({
     selector: 'general-athletics',
     templateUrl: './athletics.component.html',
